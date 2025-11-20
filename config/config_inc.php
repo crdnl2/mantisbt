@@ -27,3 +27,7 @@ $g_status_colors = array(
 $g_status_fixed_threshold = 60;            // Resolved starts at 60
 $g_bug_resolved_status_threshold = 60;
 $g_bug_closed_status_threshold = 80;
+
+/* Reopen behavior | This forces reopened tickets to fall under open status */
+$g_bug_reopen_status = 10;
+$g_bug_reopen_resolution = FIXED;
