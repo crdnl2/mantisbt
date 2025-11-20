@@ -33,4 +33,3 @@ $g_bug_closed_status_threshold = 80;
 
 /* Reopen behavior | This forces reopened tickets to fall under open status */
 $g_bug_reopen_status = 10;
-$g_bug_reopen_resolution = FIXED;
