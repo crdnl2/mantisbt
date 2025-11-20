@@ -33,3 +33,6 @@ $g_bug_closed_status_threshold = 80;
 
 /* Reopen behavior | This forces reopened tickets to fall under open status */
 $g_bug_reopen_status = 10;
+
+# Custom resolution labels
+$g_resolution_enum_string = '10:open,20:fixed,30:reopened,40:unable to duplicate,50:not fixable,60:duplicate,70:more details required,80:rejected';

@@ -20,4 +20,7 @@ $s_onhold_bug_button    = 'Put On Hold';
 $s_resolved_bug_button  = 'Resolve';
 $s_closed_bug_button    = 'Close';
 
+# Custom resolution labels
+$s_resolution_enum_string = '10:open,20:fixed,30:reopened,40:unable to duplicate,50:not fixable,60:duplicate,70:more details required,80:rejected';
+
 ?>
