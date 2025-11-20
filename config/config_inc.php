@@ -1,16 +1,16 @@
 <?php
 
 /* STATUS LIST */
-$g_status_enum_string = '10:open,20:review,30:wip,40:onhold,50:assigned,60:resolved,80:closed';
+$g_status_enum_string = '10:open,20:review,30:workinprogress,40:onhold,50:assigned,60:resolved,80:closed';
 
 /* WORKFLOW */
 $g_status_enum_workflow = array(
-    10 => '20:review,30:wip,40:onhold,50:assigned,60:resolved',
-    20 => '30:wip,40:onhold,50:assigned,60:resolved',
+    10 => '20:review,30:workinprogress,40:onhold,50:assigned,60:resolved',
+    20 => '30:workinprogress,40:onhold,50:assigned,60:resolved',
     30 => '40:onhold,50:assigned,60:resolved',
     40 => '50:assigned,60:resolved',
-    50 => '30:wip,40:onhold,60:resolved',
-    60 => '80:closed,40:onhold',
+    50 => '30:workinprogress,40:onhold,60:resolved',
+    60 => '80:closed,10:open',
     80 => ''
 );
 
@@ -18,7 +18,7 @@ $g_status_enum_workflow = array(
 $g_status_colors = array(
     'open'     => '#fcbdbd',
     'review'   => '#fff2a8',
-    'wip'      => '#c2dfff',
+    'workinprogress'=>'#c2dfff',
     'onhold'   => '#ffd5a3',
     'assigned' => '#e3e3e3',
     'resolved' => '#d2f5b0',
