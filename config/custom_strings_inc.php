@@ -1,6 +1,6 @@
 <?php
 
-$s_status_enum_string = '10:open,20:review,30:work-in-progress,40:onhold,50:assigned,60:resolved,80:closed';
+$s_status_enum_string = '10:open,20:review,30:work in progress,40:on hold,50:assigned,60:resolved,80:closed';
 
 # Custom status display names
 $s_open_bug_title      = 'Open Issue';
