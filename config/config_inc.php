@@ -30,9 +30,11 @@ $g_status_fixed_threshold = 60;
 $g_bug_resolved_status_threshold = 60;
 $g_bug_closed_status_threshold = 80;
 
-
-/* Reopen behavior | This forces reopened tickets to fall under open status */
+/* Reopen behavior | This forces reopened tickets to fall under 'open' status */
 $g_bug_reopen_status = 10;
 
-# Custom resolution labels
-$g_resolution_enum_string = '10:open,20:fixed,30:reopened,40:unable to duplicate,50:not fixable,60:duplicate,70:more details required,80:rejected';
+/* Custom resolution labels */ 
+$g_resolution_enum_string = '10:open,20:fixed,40:unable to reproduce,50:not fixable,60:duplicate,70:more details required,80:rejected';
+
+/* Override default: reopened tickets use 'open' resolution label */
+$g_bug_reopen_resolution = 10;
